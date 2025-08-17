@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:newzler_app/provider/theme_provider.dart';
+import 'package:newzler_app/view/onBoarding/onboarding_screen.dart';
 
 import 'package:provider/provider.dart';
 
@@ -42,7 +43,7 @@ class IntroScreen extends StatelessWidget {
             ),
             SizedBox(height: 20),
             GestureDetector(
-              onTap: () {},
+              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => OnBoardingScreen())),
               child: Container(
                 width: 144,
                 height: 48,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:newzler_app/confirm/confirm_screen.dart';
 import 'package:newzler_app/provider/theme_provider.dart';
 import 'package:newzler_app/view/onBoarding/onboarding_screen.dart';
 import 'package:newzler_app/widgets/custom_button.dart';
@@ -271,7 +272,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       color: Colors.lightBlueAccent.withValues(alpha: 0.5),
                     ),
                   ],
-                  onTap: (){},
+                  onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => ConfirmScreen())),
+                  
                 ),
                 SizedBox(height: 30),
                 Row(
@@ -284,7 +286,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       ),
                     ),
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => ConfirmScreen())),
                       child: Text(
                         'Login',
                         style: TextStyle(

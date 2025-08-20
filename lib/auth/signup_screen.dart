@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:newzler_app/auth/login_screen.dart';
 import 'package:newzler_app/confirm/confirm_screen.dart';
 import 'package:newzler_app/provider/theme_provider.dart';
 import 'package:newzler_app/view/onBoarding/onboarding_screen.dart';
@@ -286,7 +287,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       ),
                     ),
                     GestureDetector(
-                      onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => ConfirmScreen())),
+                      onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => LoginScreen())),
                       child: Text(
                         'Login',
                         style: TextStyle(

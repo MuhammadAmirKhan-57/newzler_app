@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:newzler_app/auth/signup_screen.dart';
 import 'package:newzler_app/models/boarding_model.dart';
 import 'package:newzler_app/provider/theme_provider.dart';
 import 'package:provider/provider.dart';
@@ -105,7 +106,7 @@ class OnBoardingScreen extends StatelessWidget {
           SizedBox(height: screenHeight * 0.10),
 
           GestureDetector(
-            onTap: () {},
+            onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => SignUpScreen())),
             child: Container(
               height: screenHeight * 0.065,
               width: screenWidth * 0.8,

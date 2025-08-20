@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:newzler_app/auth/signup_screen.dart';
 import 'package:newzler_app/provider/theme_provider.dart';
+import 'package:newzler_app/view/wellcome/wellcome_screen.dart';
 import 'package:newzler_app/widgets/custom_button.dart';
 import 'package:provider/provider.dart';
 
@@ -39,7 +40,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     InkWell(
-                      onTap: () {}, //Wellcome Screen
+                      onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => WellcomeScreen())), //Wellcome Screen
                       child: Image.asset(
                         'assets/images/arrow-1.png',
                         color: isDarkTheme ? Colors.white : Colors.black,

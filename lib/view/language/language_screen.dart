@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:newzler_app/provider/theme_provider.dart';
+import 'package:newzler_app/view/language/all_languages.dart';
 import 'package:provider/provider.dart';
 
 class LanguageScareen extends StatefulWidget {
@@ -111,7 +112,7 @@ class _LanguageScareenState extends State<LanguageScareen> {
                     onTap: () => Navigator.pop(context),
                   ),
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => LanguagePickerScreen())),
                     child: Container(
                       width: 150,
                       height: 60,

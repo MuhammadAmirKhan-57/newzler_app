@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:newzler_app/models/language_model.dart';
 import 'package:newzler_app/provider/theme_provider.dart';
+import 'package:newzler_app/view/wellcome/wellcome_screen.dart';
 
 import 'package:provider/provider.dart';
 
@@ -79,7 +80,7 @@ class _LanguagePickerScreenState extends State<LanguagePickerScreen> {
         ),
         actions: [
           TextButton(
-            onPressed: () {},
+            onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => WellcomeScreen())),
             child: Container(
               width: 77,
               height: 44,

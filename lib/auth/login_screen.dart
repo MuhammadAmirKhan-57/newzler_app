@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:newzler_app/auth/signup_screen.dart';
 import 'package:newzler_app/provider/theme_provider.dart';
+import 'package:newzler_app/view/forgot/forgot_email.dart';
+import 'package:newzler_app/view/forgot/forgot_pass.dart';
 import 'package:newzler_app/view/wellcome/wellcome_screen.dart';
 import 'package:newzler_app/widgets/custom_button.dart';
 import 'package:provider/provider.dart';
@@ -154,7 +156,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 SizedBox(height: 140),
                 Center(
                   child: TextButton(
-                    onPressed: () {}, //Forgot Screen
+                    onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => ForgotPassScreen())), //Forgot Screen
                     child: Text(
                       'Forgot your Password?',
                       style: TextStyle(color: isDarkTheme ? Colors.white : Color(0xff000000)),
@@ -163,7 +165,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 Center(
                   child: TextButton(
-                    onPressed: () {}, //Forgot Email Screen
+                    onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => ForgotEmailScreen())), //Forgot Email Screen
                     child: Text(
                       'Forgot your Username?',
                       style: TextStyle(color: isDarkTheme ? Colors.white : Color(0xff000000)),

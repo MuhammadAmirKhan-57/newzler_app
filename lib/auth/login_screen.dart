@@ -3,6 +3,7 @@ import 'package:newzler_app/auth/signup_screen.dart';
 import 'package:newzler_app/provider/theme_provider.dart';
 import 'package:newzler_app/view/forgot/forgot_email.dart';
 import 'package:newzler_app/view/forgot/forgot_pass.dart';
+import 'package:newzler_app/view/home/home_screen.dart';
 import 'package:newzler_app/view/wellcome/wellcome_screen.dart';
 import 'package:newzler_app/widgets/custom_button.dart';
 import 'package:provider/provider.dart';
@@ -150,7 +151,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       color: Colors.lightBlueAccent.withValues(alpha: 0.5),
                     ),
                   ],
-                  onTap: () {}, //Home Screen
+                  onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen())), //Home Screen
                   textColor: Color(0xffFFFFFF),
                 ),
                 SizedBox(height: 140),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:newzler_app/provider/theme_provider.dart';
+import 'package:newzler_app/view/home/video/video_payer.screen.dart';
 import 'package:provider/provider.dart';
 import 'package:video_player/video_player.dart';
 
@@ -73,7 +74,14 @@ class _VideoSectionState extends State<VideoSection> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           GestureDetector(
-            onTap: () {}, //Video Player Screen
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => VideoPlayerScreen(videoUrl: widget.videoUrl, avatarText: '',),
+                ),
+              );
+            }, //Video Player Screen
             child: Stack(
               alignment: Alignment.center,
               children: [

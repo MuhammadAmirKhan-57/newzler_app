@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:newzler_app/provider/theme_provider.dart';
+import 'package:newzler_app/view/home/account/notification/custom_toggle.dart';
 import 'package:provider/provider.dart';
 
 
@@ -77,7 +78,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
             fontWeight: FontWeight.w500,
           ),
         ),
-        // CustomSwitch(value: value, onChanged: onChanged),
+        CustomSwitch(value: value, onChanged: onChanged),
       ],
     ),
   );

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:newzler/provider/theme_provider.dart';
+import 'package:newzler_app/provider/theme_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:video_player/video_player.dart';
 

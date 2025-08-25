@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:newzler_app/provider/theme_provider.dart';
 import 'package:newzler_app/view/home/trading/trading_screen.dart';
+import 'package:newzler_app/view/home/video/video_screen.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -39,7 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<Widget> screenList = [
     const Placeholder(),
     const TradingScreen(),
-    // const VideoScreen(),
+    const VideoScreen(),
     // NewsSearchScreen(),
     // const AccountScreen(),
   ];

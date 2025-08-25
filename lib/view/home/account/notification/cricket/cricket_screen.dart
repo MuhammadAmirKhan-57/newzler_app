@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:newzler_app/view/home/account/notification/cricket/match_screen.dart';
 
 class CricketScoreScreen extends StatelessWidget {
   CricketScoreScreen({super.key});
@@ -67,7 +67,13 @@ class CricketScoreScreen extends StatelessWidget {
                 matches.length,
                 (index) => GestureDetector(
                   onTap: () {
-                   // Match Details Screen
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            MatchDetailScreen(matchData: matches[index]),
+                      ),
+                    );
                   },
                   child: Container(
                     width: 300,

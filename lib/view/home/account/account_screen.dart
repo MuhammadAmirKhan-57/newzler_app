@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:newzler_app/models/account_model.dart';
 import 'package:newzler_app/provider/theme_provider.dart';
+import 'package:newzler_app/view/home/account/notification/notification_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -45,7 +46,7 @@ class _AccountScreenState extends State<AccountScreen> {
       AccountModel(
           image: 'assets/images/notification 1.png',
           title: 'Notification',
-          // screen: const NotificationScreen()
+          screen: const NotificationScreen()
           ),
       AccountModel(
           image: 'assets/images/theme.png',

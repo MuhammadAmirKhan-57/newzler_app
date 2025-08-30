@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:newzler_app/provider/theme_provider.dart';
+import 'package:newzler_app/view/home/bookmarks/bookmark_news_screen.dart';
+import 'package:newzler_app/view/home/bookmarks/no_bookmark_screen.dart';
 import 'package:provider/provider.dart';
 
 class MyBookMarkScreen extends StatelessWidget {
@@ -40,7 +42,7 @@ class MyBookMarkScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               GestureDetector(
-                onTap: () {}, //Bookmark news screen
+                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => BookmarkNewsScreen())), //Bookmark news screen
                 child: Container(
                   width: 140,
                   height: 55,
@@ -62,7 +64,7 @@ class MyBookMarkScreen extends StatelessWidget {
               ),
               SizedBox(width: 20),
                GestureDetector(
-                onTap: () {},  //No bookmark sheet,
+                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => NoBookMarkSheet())),  //No bookmark sheet,
                  child: Container(
                   width: 140,
                   height: 55,

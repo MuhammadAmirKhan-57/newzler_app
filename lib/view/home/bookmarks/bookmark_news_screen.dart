@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:newzler/provider/theme_provider.dart';
-import 'package:newzler/view/account/my-bookmark/custom_bookmark.dart';
+import 'package:newzler_app/provider/theme_provider.dart';
+import 'package:newzler_app/view/home/bookmarks/custom_bookmark.dart';
 import 'package:provider/provider.dart';
 
 class BookmarkNewsScreen extends StatefulWidget {

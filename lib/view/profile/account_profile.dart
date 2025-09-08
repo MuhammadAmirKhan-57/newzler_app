@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:newzler_app/provider/theme_provider.dart';
 import 'package:newzler_app/view/profile/birthday_screen.dart';
 import 'package:newzler_app/view/profile/email_update_screen.dart';
+import 'package:newzler_app/view/profile/gender.dart';
 import 'package:newzler_app/view/profile/name_update_screen.dart';
 import 'package:provider/provider.dart';
 
@@ -261,7 +262,7 @@ class Profile extends StatelessWidget {
                           ),
                         ),
                         InkWell(
-                          onTap: () {}, //Gender Screen
+                          onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => GenderScreen())),
                           child: Icon(Icons.arrow_forward_ios, size: 22)),
                       ],
                     ),

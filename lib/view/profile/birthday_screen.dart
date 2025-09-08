@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:newzler_app/provider/theme_provider.dart';
+import 'package:newzler_app/view/profile/account_profile.dart';
 import 'package:provider/provider.dart';
 
 class BirthdayScreen extends StatefulWidget {
@@ -49,7 +50,7 @@ class _BirthdayScreenState extends State<BirthdayScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     InkWell(
-                      onTap: () {}, //Profile
+                      onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => Profile())), //Profile
                       child: Image.asset(
                         'assets/images/arrow-1.png',
                         color: isDarkTheme ? Colors.white : Colors.black,
@@ -152,7 +153,7 @@ class _BirthdayScreenState extends State<BirthdayScreen> {
               ),
               const SizedBox(height: 20),
               GestureDetector(
-                onTap: () {}, //Profile
+                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => Profile())),
                 child: Center(
                   child: Container(
                     width: 320,

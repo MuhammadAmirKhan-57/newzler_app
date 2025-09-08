@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:newzler/models/publisher_model.dart';
-import 'package:newzler/provider/theme_provider.dart';
+import 'package:newzler_app/models/publisher_model.dart';
+import 'package:newzler_app/provider/theme_provider.dart';
 import 'package:provider/provider.dart';
 
 class MyPublishScreen extends StatefulWidget {

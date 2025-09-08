@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:newzler_app/provider/theme_provider.dart';
 import 'package:newzler_app/view/profile/birthday_screen.dart';
+import 'package:newzler_app/view/profile/email_update_screen.dart';
+import 'package:newzler_app/view/profile/name_update_screen.dart';
 import 'package:provider/provider.dart';
 
 class Profile extends StatelessWidget {
@@ -67,7 +69,7 @@ class Profile extends StatelessWidget {
                           ),
                         ),
                         InkWell(
-                          onTap: () {}, // Name Update Screen
+                          onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => NameUpdateScreen())),
                           child: Icon(Icons.arrow_forward_ios, size: 22)),
                       ],
                     ),
@@ -142,7 +144,7 @@ class Profile extends StatelessWidget {
                           ),
                         ),
                         InkWell(
-                          onTap: () {}, //Email Update Screen
+                          onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => EmailUpdateScreen())), //Email Update Screen
                           child: Icon(Icons.arrow_forward_ios, size: 22)),
                       ],
                     ),

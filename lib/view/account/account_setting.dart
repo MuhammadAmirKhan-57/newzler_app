@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:newzler_app/provider/theme_provider.dart';
+import 'package:newzler_app/view/account/change_password.dart';
 import 'package:newzler_app/view/profile/account_profile.dart';
 import 'package:provider/provider.dart';
 
@@ -94,7 +95,7 @@ class AccountSettingScreen extends StatelessWidget {
                 ),
               ),
               trailing: InkWell(
-                onTap: () {}, //Change Password Screen
+                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => ChangePasswordScreen())),
                 child: Icon(
                   Icons.arrow_forward_ios,
                   size: 22,
